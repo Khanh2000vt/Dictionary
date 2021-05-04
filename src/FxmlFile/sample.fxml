@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="849.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="insertWord" layoutX="33.0" layoutY="134.0" onKeyReleased="#inserWord_OnKeyReleased" prefHeight="39.0" prefWidth="218.0" promptText="Nhập từ khóa...." style="-fx-background-radius: 30;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <ListView fx:id="hienTimKiem" layoutX="33.0" layoutY="189.0" onMouseClicked="#hienNghia_onClick" prefHeight="370.0" prefWidth="271.0" style="-fx-background-color: F0FFFF;" />
+      <TextArea fx:id="hienNghia" layoutX="318.0" layoutY="189.0" prefHeight="370.0" prefWidth="500.0" />
+      <Button fx:id="them" graphicTextGap="10.0" layoutX="346.0" layoutY="131.0" mnemonicParsing="false" onAction="#them_onClick" prefHeight="42.0" prefWidth="158.0" style="-fx-background-radius: 30; -fx-background-color: white;" text="Thêm từ mới" textFill="#223b97">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="32.0">
+               <image>
+                  <Image url="@../image/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="sua" graphicTextGap="10.0" layoutX="531.0" layoutY="133.0" mnemonicParsing="false" onAction="#sua_onClick" prefHeight="42.0" prefWidth="129.0" style="-fx-background-radius: 30; -fx-background-color: white;" text="Sửa từ" textFill="ORANGE">
+         <graphic>
+            <ImageView accessibleRole="BUTTON" fitHeight="30.0" fitWidth="35.0">
+               <image>
+                  <Image url="@../image/config.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button graphicTextGap="10.0" layoutX="687.0" layoutY="133.0" mnemonicParsing="false" onAction="#xoa_onClick" prefHeight="42.0" prefWidth="122.0" style="-fx-background-radius: 30; -fx-background-color: White;" text="Xóa từ" textFill="RED" fx:id="xoa">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="32.0">
+               <image>
+                  <Image url="@../image/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <ImageView fitHeight="122.0" fitWidth="135.0" layoutX="714.0" layoutY="-1.0">
+         <image>
+            <Image url="@../image/dhcn.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="-1.0" prefHeight="122.0" prefWidth="715.0" style="-fx-background-color: #F0F8FF;" text="Từ điển Anh - Việt" textAlignment="CENTER" textFill="#7c2727">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="noi" layoutX="271.0" layoutY="135.0" mnemonicParsing="false" onAction="#noi_onClick" prefHeight="39.0" prefWidth="48.0" style="-fx-background-radius: 30; -fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0">
+               <image>
+                  <Image url="@../image/speak.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="220.0" layoutY="142.0" style="-fx-opacity: 0.2;">
+         <image>
+            <Image url="@../image/lookup.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
